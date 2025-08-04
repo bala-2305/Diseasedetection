@@ -77,7 +77,7 @@ txt = LANGUAGES[language]
 
 st.sidebar.markdown("---")
 st.sidebar.markdown(f"✅ {txt['page_select']}:")
-st.sidebar.markdown("[🔗 Homepage](https://yourdomain.com)")
+st.sidebar.markdown("[Helper=>](https://diseasehelper.onrender.com)")
 # placeholder for future navigation
 
 st.title(txt["title"])
@@ -107,3 +107,4 @@ if uploaded_file:
         for i, score in enumerate(probs.tolist()):
             label = TRANSLATIONS.get(class_names[i], {}).get(language, class_names[i])
             st.write(f"{label}: {score*100:.2f}%")
+
